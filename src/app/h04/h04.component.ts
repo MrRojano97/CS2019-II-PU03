@@ -105,14 +105,80 @@ class Genoma{
 
 }
 
-//El brayan debe hacer esta wea
+/**
+ * 
+ */
 class typeOfEntities{
-
-  constructor(){
-
+  id:number;
+  name:string;
+  color:string;
+  typeOfLine: string;
+  figure:string;
+  constructor (id: number, name: string,color: string,typeOfLine: string, figure: string){
+    this.id=id;
+    this.name=name;
+    this.color=color;
+    this.typeOfLine=typeOfLine;
+    this.figure=figure;
+  }
+  /**
+   * getId
+   */
+  public getId() : number {
+    return this.id;
+  }
+  /**
+   * getName
+   */
+  public getName():string {
+    return this.name;
   }
 
+  /**
+   * setName
+   */
+  public setName(name:string) {
+    this.name=name;
+  }
+  /**
+   * getColor
+   */
+  public getColor():string {
+    return this.color;
+  }
+  /**
+   * setColor
+   */
+  public setColor(color:string) {
+    this.color=color;
+  }
 
+  /**
+   * getTypeOfLine
+   */
+  public getTypeOfLine():string {
+    return this.typeOfLine;
+  }
+
+  /**
+   * setTypeOfLine
+   */
+  public setTypeOfLine(typeOfLine: string) {
+    this.typeOfLine=typeOfLine;
+  }
+
+ /**
+  * getFigure
+ */
+ public getFigure():string {
+   return this.figure;
+}
+/**
+ * setFigure
+figure:string */
+public setFigure(figure:string) {
+  this.figure=figure;
 }
 
+}
 
