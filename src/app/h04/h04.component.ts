@@ -1,5 +1,3 @@
-import { Subject } from "rxjs";
-
 //import { getUrlScheme } from "@angular/compiler";
 //import { summaryFileName } from '@angular/compiler/src/aot/util';
 //import { compileNgModuleFromRender2 } from '@angular/compiler/src/render3/r3_module_compiler';
