@@ -1,0 +1,83 @@
+section { 
+  background: url(https://image.freepik.com/vector-gratis/fondo-blanco-negro-vector-abstracto-negocio-poligonos-caoticos-fondo-oscuro-espacial-abstracto-red-ilustracion-poligonal_53562-4502.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #E74C3C;
+}
+
+.caja { 
+  padding-left: 60px;
+  font-family: sans-serif; 
+  font-size: 18px; 
+  font-weight: 400; 
+  color: #ffffff; 
+  }
+#uno1{
+  color: #D98880;
+}
+#dos2{
+  color: #F1948A;
+}
+#tres3{
+  color: #C39BD3;
+}
+#cuatro4{
+  color: #BB8FCE;
+}
+#cinco5{
+  color: #7FB3D5;
+}
+#seis6{
+  color: #76D7C4;
+}
+
+
+
+
+
+#titulo img {
+    width: 500px; height: 220px;
+  }  
+  
+  .service {
+    background: #fff;
+    padding: 50px;
+  }
+  
+  .service .service-element,
+  .service .service-info {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+  
+  .service .service-icon {
+    display: block;
+    font-size: 30px;
+    color: #999caa;
+    margin-bottom: 30px;
+  }
+  
+  .service:hover .service-element {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+  
+  .service:hover .service-info {
+    -webkit-transform: translate3d(0, -30%, 0);
+    -moz-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
