@@ -105,14 +105,184 @@ class Genoma{
 
 }
 
-//El brayan debe hacer esta wea
-class typeOfEntities{
-
-  constructor(){
-
+/**
+ * 
+ */
+class typeOfRelation{
+  id:number;
+  name:string;
+  color:string;
+  typeOfLine: string;
+  figure:string;
+  constructor (id: number, name: string,color: string,typeOfLine: string, figure: string){
+    this.id=id;
+    this.name=name;
+    this.color=color;
+    this.typeOfLine=typeOfLine;
+    this.figure=figure;
+  }
+  /**
+   * getId
+   */
+  public getId() : number {
+    return this.id;
+  }
+  /**
+   * getName
+   */
+  public getName():string {
+    return this.name;
   }
 
+  /**
+   * setName
+   */
+  public setName(name:string) {
+    this.name=name;
+  }
+  /**
+   * getColor
+   */
+  public getColor():string {
+    return this.color;
+  }
+  /**
+   * setColor
+   */
+  public setColor(color:string) {
+    this.color=color;
+  }
+
+  /**
+   * getTypeOfLine
+   */
+  public getTypeOfLine():string {
+    return this.typeOfLine;
+  }
+
+  /**
+   * setTypeOfLine
+   */
+  public setTypeOfLine(typeOfLine: string) {
+    this.typeOfLine=typeOfLine;
+  }
+
+ /**
+  * getFigure
+ */
+ public getFigure():string {
+   return this.figure;
+}
+/**
+ * setFigure
+figure:string */
+public setFigure(figure:string) {
+  this.figure=figure;
+}
 
 }
 
+/**
+ * this class allows the creation of relationships between genomes "two genomes only" 
+ * Note: if you need create one relations father and son and mother and son, you need create two relations, but if the relation is gemelos, you not need two relations
+ *       Rememer the father may have a son but he can marrierd other female or male. that woman would not be the mother
+ */
+class relations{
+  id:number;
+  idTypeOfRelation:number;
+  idGenomaA:number;
+  idGenomaB: number;
+  idSubject:number;
 
+  /**
+   * Constructor of the relations
+   * @param id Construc
+   * @param idTypeOfRelation 
+   * @param idGenomaA 
+   * @param idGenomaB 
+   * @param idSubject 
+   */
+  constructor (id: number, idTypeOfRelation: number,idGenomaA: number,idGenomaB: number, idSubject: number){
+    this.id=id;
+    this.idTypeOfRelation=idTypeOfRelation;
+    this.idGenomaA=idGenomaA;
+    this.idGenomaB=idGenomaB;
+    this.idSubject=idSubject;
+  }
+
+  /**
+   * getId
+   */
+  public getId() : number {
+    return this.id;
+  }
+
+  /**
+   *setId
+   *id: number 
+  */
+  public setId(id: number) {
+    this.id=id;
+  }
+
+  /**
+   * getIdTypeOfRelations
+   */
+  public getIdTypeOfRelations() : number {
+    return this.idTypeOfRelation;
+  }
+
+  /**
+   *setIdTypeOfRelations
+   *idTypeOfRelations: number 
+  */
+  public setIdTypeOfRelations(idTypeOfRelation: number) {
+    this.idTypeOfRelation=idTypeOfRelation;
+  }
+
+  /**
+   * getIdGenomaA
+   */
+  public getIdGenomaA() : number {
+    return this.idGenomaA;
+  }
+
+  /**
+   *setId
+   *id: number 
+  */
+ public setIdGenomaA(idGenomaA: number) {
+  this.idGenomaA=idGenomaA;
+}
+
+  /**
+   * getIdGenomaB
+   */
+  public getIdGenomaB() : number {
+    return this.idGenomaB;
+  }
+
+  /**
+   *setId
+   *id: number 
+  */
+  public setIdGenomaB(idGenomaB: number) {
+    this.idGenomaB=idGenomaB;
+  }
+
+  /**
+   * getIdSubject
+   */
+  public getIdSubject() : number {
+    return this.idSubject;
+  }
+
+  /**
+   *setId
+   *id: number 
+  */
+  public setIdSubject(idSubject: number) {
+    this.idSubject=idSubject;
+  }
+
+}
