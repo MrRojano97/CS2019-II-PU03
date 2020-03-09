@@ -11,10 +11,14 @@ img{
 width: 400px; height: 250px;
 }
 
-
-  
+.content-lg{
+  background-color: #F1F0E8;
+}
+.row{
+  background-color: #F1F0E8;
+}
 .service {
-background: #fff;
+background: #F1F0E8;
 padding: 50px;
 }
 
