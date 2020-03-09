@@ -11,6 +11,7 @@ img{
 width: 400px; height: 250px;
 }
 
+<<<<<<< HEAD
 h2 {
   font-size: 48px;
   color: #000000;
@@ -21,8 +22,16 @@ h3 {
   color: #000000;
   }
   
+=======
+.content-lg{
+  background-color: #F1F0E8;
+}
+.row{
+  background-color: #F1F0E8;
+}
+>>>>>>> Pinky
 .service {
-background: #fff;
+background: #F1F0E8;
 padding: 50px;
 }
 

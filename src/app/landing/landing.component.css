@@ -1,6 +1,7 @@
 #titulo img {
   width: 550px; height: 280px;
 }  
+<<<<<<< HEAD
 
 p {
   font-size: 18px;
@@ -15,11 +16,18 @@ h1 {
   font-size: 48px;
   color: #000000;
 }
+=======
+>>>>>>> Pinky
 .service {
   background: #fff;
   padding: 50px;
 }
 
+
+.course-area{
+  height: 100vh;
+  background-color: #F1F0E8;
+}
 .service .service-element,
 .service .service-info {
   -webkit-transform: translate3d(0, 0, 0);
