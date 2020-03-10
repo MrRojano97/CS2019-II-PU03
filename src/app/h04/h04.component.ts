@@ -115,6 +115,7 @@ class typeOfRelation{
   color:string;
   typeOfLine: string;
   figure:string;
+
   constructor (id: number, name: string,color: string,typeOfLine: string, figure: string){
     this.id=id;
     this.name=name;
@@ -203,7 +204,6 @@ class relation {
       this.idGenomaA=idGenomaA;
       this.idGenomaB=idGenomaB;
   }
-
   /**
    * getId
    */
@@ -267,14 +267,79 @@ class relation {
 
 class ControllerRelations { 
 
-  list: Array<number> = [];
+ listRelations: Array<relation>;
 
 
   /**
    * Constructor of the relations
    */
   constructor (){
+    
+  }
 
+  /**
+   * getId
+   */
+  public createMatrimonio(id: number, idTypeOfRelation: number,idGenomaA: number,idGenomaB: number){
+    id=id;
+    idTypeOfRelation=idTypeOfRelation;
+    idGenomaA=idGenomaA;
+    idGenomaB=idGenomaB;
+    this.listRelations.push(new relation(id, idTypeOfRelation, idGenomaA, idGenomaB));
+    console.log("se a creado un matrimonio");
+}
+  /**
+   * getId
+   */
+  public createConvivencia(id: number, idTypeOfRelation: number,idGenomaA: number,idGenomaB: number){
+    id=id;
+    idTypeOfRelation=idTypeOfRelation;
+    idGenomaA=idGenomaA;
+    idGenomaB=idGenomaB;
+    this.listRelations.push(new relation(id, idTypeOfRelation, idGenomaA, idGenomaB));
+    console.log("se a creado un Convivencia");
+
+}
+  /**
+   * getId
+   */
+  public createFiliacion(id: number, idTypeOfRelation: number,idGenomaA: number,idGenomaB: number){
+    id=id;
+    idTypeOfRelation=idTypeOfRelation;
+    idGenomaA=idGenomaA;
+    idGenomaB=idGenomaB;
+    this.listRelations.push(new relation(id, idTypeOfRelation, idGenomaA, idGenomaB));
+    console.log("se a creado un Filiacion");
+}
+  /**
+   * getId
+   */
+  public createGemelos(id: number, idTypeOfRelation: number,idGenomaA: number,idGenomaB: number){
+    id=id;
+    idTypeOfRelation=idTypeOfRelation;
+    idGenomaA=idGenomaA;
+    idGenomaB=idGenomaB;
+    this.listRelations.push(new relation(id, idTypeOfRelation, idGenomaA, idGenomaB));
+    console.log("se a creado un Gemelos");
+
+}
+  /**
+   * getId
+   */
+  public createGemelosIdenticos(id: number, idTypeOfRelation: number,idGenomaA: number,idGenomaB: number){
+    id=id;
+    idTypeOfRelation=idTypeOfRelation;
+    idGenomaA=idGenomaA;
+    idGenomaB=idGenomaB;
+    this.listRelations.push(new relation(id, idTypeOfRelation, idGenomaA, idGenomaB));
+    console.log("se a creado un Gemelos Identicos");
+  }
+
+  public createReport(type: string){
+    for (let index = 0; index < this.listRelations.length; index++) {
+      const element = this.listRelations[index];
+      console.log("id:"+ element.getId + " typeOfRelation:" + element.getIdTypeOfRelations + " idgenomaA:" + element.getIdGenomaA + " idgenomaB:" + element.getIdGenomaA);
+    }
   }
 
 }
