@@ -8,9 +8,11 @@ p {
 }
 
 img{
-width: 400px; height: 250px;
+  width: 400px; height: 250px;
 }
-
+div{
+  background-color: #F1F0E8;
+}
 .content-lg{
   background-color: #F1F0E8;
 }
