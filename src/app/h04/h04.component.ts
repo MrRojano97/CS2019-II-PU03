@@ -71,9 +71,9 @@ class subject {
 class Genoma{
   id: number;
   sub: subject;
-  tyOfEn: typeOfEntities;
+  tyOfEn: typeOfRelation;
 
-  constructor(i: number, s: subject, t: typeOfEntities){
+  constructor(i: number, s: subject, t: typeOfRelation){
     this.id = i;
     this.sub = s;
     this.tyOfEn = t;
@@ -87,7 +87,7 @@ class Genoma{
     this.sub = v;
   }
 
-  public setTyOfEn(v : typeOfEntities) {
+  public setTyOfEn(v : typeOfRelation) {
     this.tyOfEn = v;
   }
 
@@ -100,7 +100,7 @@ class Genoma{
     return this.sub;
   }
 
-  public getTyOfEnG() : typeOfEntities {
+  public getTyOfEnG() : typeOfRelation {
     return this.tyOfEn;
   }
 
